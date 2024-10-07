@@ -3,7 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'pages/home.dart';
 
 class SelectPage extends StatefulWidget {
   const SelectPage({super.key});

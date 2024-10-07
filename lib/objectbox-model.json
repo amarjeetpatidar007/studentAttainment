@@ -1,0 +1,197 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8121387333330509352",
+      "lastPropertyId": "3:1458235019417834667",
+      "name": "ClassModel",
+      "properties": [
+        {
+          "id": "1:8344741435823709404",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:649198398780069505",
+          "name": "classID",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "1:4388691329613373954"
+        },
+        {
+          "id": "3:1458235019417834667",
+          "name": "className",
+          "type": 9
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:6693927113703936857",
+          "name": "subjects",
+          "targetId": "5:5168867376406878954"
+        },
+        {
+          "id": "2:297570568055590294",
+          "name": "students",
+          "targetId": "4:694201165520271826"
+        }
+      ]
+    },
+    {
+      "id": "2:4240947466676987661",
+      "lastPropertyId": "4:8803990178385988372",
+      "name": "Exam",
+      "properties": [
+        {
+          "id": "1:1383432547719829200",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1278391489801295707",
+          "name": "examID",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "2:4559386912830050448"
+        },
+        {
+          "id": "3:1564217348732373818",
+          "name": "examName",
+          "type": 9
+        },
+        {
+          "id": "4:8803990178385988372",
+          "name": "subjectId",
+          "type": 6
+        }
+      ],
+      "relations": [
+        {
+          "id": "3:668777592474530047",
+          "name": "results",
+          "targetId": "3:2122912694261922191"
+        }
+      ]
+    },
+    {
+      "id": "3:2122912694261922191",
+      "lastPropertyId": "5:3270302831683871918",
+      "name": "Result",
+      "properties": [
+        {
+          "id": "1:8217340774236899497",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7849931209381640598",
+          "name": "resultID",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "3:196917123607408810"
+        },
+        {
+          "id": "3:6180442013201368901",
+          "name": "studentId",
+          "type": 6
+        },
+        {
+          "id": "4:3463577293222681081",
+          "name": "examId",
+          "type": 6
+        },
+        {
+          "id": "5:3270302831683871918",
+          "name": "marksJson",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:694201165520271826",
+      "lastPropertyId": "4:5354813011484784613",
+      "name": "Student",
+      "properties": [
+        {
+          "id": "1:2055059726826722177",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1139988689415514451",
+          "name": "studentID",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "4:8163789812325243822"
+        },
+        {
+          "id": "3:1653131775444523458",
+          "name": "enrollmentNo",
+          "type": 9
+        },
+        {
+          "id": "4:5354813011484784613",
+          "name": "studentName",
+          "type": 9
+        }
+      ],
+      "relations": [
+        {
+          "id": "4:599563247502765828",
+          "name": "results",
+          "targetId": "3:2122912694261922191"
+        }
+      ]
+    },
+    {
+      "id": "5:5168867376406878954",
+      "lastPropertyId": "3:5800660077900968037",
+      "name": "Subject",
+      "properties": [
+        {
+          "id": "1:2041423086405635650",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7269928527157205398",
+          "name": "subjectID",
+          "type": 9,
+          "flags": 2080,
+          "indexId": "5:56633869664900096"
+        },
+        {
+          "id": "3:5800660077900968037",
+          "name": "subjectName",
+          "type": 9
+        }
+      ],
+      "relations": [
+        {
+          "id": "5:623756514686240118",
+          "name": "exams",
+          "targetId": "2:4240947466676987661"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "5:5168867376406878954",
+  "lastIndexId": "5:56633869664900096",
+  "lastRelationId": "5:623756514686240118",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
